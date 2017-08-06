@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0:
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+p, h1, h2, h3, h4, h5{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: #f1f1f1;
+}
+#main {
+    min-width: 835px;
+    /max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    position: relative;
+    background: #69d2e7 ;
+    height: 471px;
+}
+.orange_line{
+    height: 5px;
+    background: #fa6900;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    background: url('images/logo.png') no-repeat center;
+    background-size: cover;
+    margin: 40px 0 0 100px;
+}
+
+#navigation{
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin: 40px 100px 0 0;
+    height: 42px;
+    width: 42px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border .2s;
+}
+#navigation:hover{
+    border-color: rgba(250, 105, 0, 0.83);
+}
+#navigation:hover #burger{
+    border-color: rgba(250, 105, 0, 0.83);
+}
+#burger{
+    position: relative;
+    top: 12px;
+    left: 10px;
+    height: 0px;
+    width: 20px;
+    border: 1.5px solid;
+    border-color: #fff;
+    margin-bottom: 6px;
+    transition: border .2s;
+}
+#navigation ul{
+    position: absolute;
+    right: 32px;
+    top: 30px;
+    width: 100px;
+    z-index: 2;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.4);
+    overflow: hidden;
+    
+    transition: height .7s;
+    transition-timing-function: cubic-bezier(1, .25, .25, 1);
+}
+#navigation ul li{
+    list-style: none;
+}
+#navigation ul li a{
+    position: relative;
+    left:-40px;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    height: 33px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 33px;
+    transition: background .2s;
+}
+#navigation .is_active{
+    background: linear-gradient(to right, rgba(250, 105, 0, 0.74), rgba(255, 255, 255, 0));
+}
+#navigation ul li a:hover{
+    background: linear-gradient(to right, rgba(250, 105, 0, 0.74), rgba(255, 255, 255, 0));
+}
+.comp_name{
+    float: left;
+    margin: 40px 0 0 10px;
+}
+.comp_name p:first-child{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.comp_name p:last-child{
+    font-size: 17px;
+    text-transform: capitalize;
+}
+h1{
+    position: relative;
+    display: block;
+    font-size: 84px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 185px;
+    text-align: center;
+}
+.subheading{
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.about_us{
+    height: 535px;
+    position: relative;
+}
+.description {
+    position: relative;
+    top: -100px;
+    height: 287px;
+    width: 835px;
+    background: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0,0,0,.6);
+}
+.heading{
+    display: inline-block;
+    height: 55px;
+    width: 385px;
+    margin-left: 228px;
+    margin-top: 40px;
+    color: #000;
+    font-size: 36px;
+    border-bottom: 1px solid #d5d5d5;
+}
+.description p:last-child{
+    margin: 33px;
+    line-height: 35px;
+    display: block;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: left;
+    clear: left;
+    color: #353535;
+}
+.shapes{
+    position: relative;
+    top: -50px;
+    padding-top: 20px;
+    column-count: 3;
+    column-width: 220px;
+}
+.shapes div{
+    height: 162px;
+    width: 162px;
+    background: white;
+    margin: auto;
+    border-radius: 10px;
+}
+.shapes div:nth-child(3){
+    background: #69d2e7;
+}
+.shapes p{
+    display: block;
+    width: 215px;
+    font-size: 24px;
+    margin: 30px auto;
+    text-align: center;
+}
+.gallery{
+    position: relative;
+    background: #fa6900;
+    height: 472px;
+}
+.gallery span{
+    position: relative;
+    top: 45px;
+    display: block;
+    height: 55px;
+    width: 710px;
+    margin: 45px auto;
+}
+.gallery span p{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+.slider{
+    position: relative;
+    margin: 90px auto 0;
+    height: 290px;
+    width: 440px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,.9)
+}
+#left_holder{
+    top: 0px;
+    left: 0px;
+    position:absolute;
+    height: 100%;
+    width: 50px;
+}
+#left_holder .left{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 10px;
+    opacity: .5;
+    cursor: pointer;
+    transition: opacity .2s;
+}
+#left_holder .left:hover{
+    opacity: 1;
+}
+#right_holder{
+    top: 0px;
+    right: 0px;
+    position:absolute;
+    height: 100%;
+    width: 50px;
+}
+#right_holder .right{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 10px;
+    opacity: .5;
+    cursor: pointer;
+    transition: opacity .2s;
+}
+#right_holder .right:hover{
+    opacity: 1;
+}
+.staff{
+    position: relative;
+    height: 530px;
+}
+#bubblebox{ 
+    position: relative;
+    top: 50px;
+    width:750px;
+    height:460px;
+    margin: 0 auto;
+}
+#bubbles{ 
+    width: 150px; 
+    margin: 0px auto; 
+    text-align:center; 
+}
+#bubbles > div{ 
+    display:inline-block; 
+    width:20px; 
+    height:20px; 
+    margin-left: 20px;
+    text-align:center; 
+    background: white;
+    border-radius:100%; 
+    font-size:17px; 
+    text-decoration:none; 
+    transition: background 0.3s linear 0s; 
+    cursor:pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    }
+#bubbles > div:first-child{
+    margin-left: 0;
+}
+#bubblecontent{ 
+    margin:0px auto; 
+    transition:opacity 0.3s linear 0s; 
+}
+#bubblecontent > div{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+}
+#bubblecontent div img{
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 40px 40px;
+}
+#bubblecontent > h2{ 
+    margin-top: 32px;
+    text-align:center;
+    color: black;
+    font-weight: bold;
+}
+#bubblecontent > .job{
+    font-size:22px;
+    line-height:1.5em;
+    text-align: center;
+    color: black;
+}
+#bubblecontent > .about{
+    display: block;
+    margin: 30px auto 70px;
+    width: 670px;
+    height: 65px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 23px;
+}
+.projects{
+    position: relative;
+    background: #fa6900;
+    height: 535px;
+    overflow: hidden;
+}
+.projects > .background-overlay{
+    position: absolute;
+    top: -190px;
+    right: -600px;
+    height: 900px;
+    width: 900px;
+    background: #fff;
+    border-radius: 450%;
+}
+.projects > .sett{
+    float: left;
+    clear: left;
+    width: 440px;
+    margin-left: 80px;
+    color: white;
+}
+.projects > .head{
+    margin-top: 128px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.projects > .subhead{
+    font-size: 22px;
+}
+.projects > .simple-block{
+    margin-top: 28px; 
+}
+.projects > .fix{
+    margin-top: 50px;
+}
+.feedback {
+    height: 550px;
+    position: relative;
+}
+.feedback > .logo {
+    position: relative;
+    margin-top: 92px;
+}
+.feedback > .comp_name{
+    position: relative;
+    margin-top: 92px;
+}
+.feedback > .social_sprite{
+    position: relative;
+    float: left;
+    background: url(images/socialIcons.png) no-repeat;
+    height: 84px;
+    width: 84px;
+    transition: background-position .5s;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-right: none;
+    cursor: pointer;
+}
+.feedback > .facebook{
+    clear: left;
+    margin-left: 80px;
+}
+.feedback > .facebook:hover{
+    background-position: 0px -84px;
+}
+.feedback > .youtube{
+    background-position: -84px 0px;
+}
+.feedback > .youtube:hover{
+    background-position: -84px -84px;
+}
+.feedback > .twitter{
+    background-position: -168px 0px;
+}
+.feedback > .twitter:hover{
+    background-position: -168px -84px;
+}
+.feedback > .google{
+    background-position: -252px 0px;
+    border-right: 1px black solid;
+}
+.feedback > .google:hover{
+    background-position: -252px -84px;
+}
+.feedback > p{
+    position: relative;
+    float: left;
+    clear: left;
+    width: 460px;
+    margin: 20px 0 0 80px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.feedback > h2{
+    float: right;
+    margin-right: 350px;
+    margin-top: -305px;
+    font-size: 26px;
+    text-transform: capitalize;
+}
+.feedback > .comments{
+    position: relative;
+    float: right;
+    clear: right;
+    margin-top: -235px;
+    margin-right: 395px;
+}
+.feedback > .comments > .user_pic{
+    float: left;
+    background: #fff;
+    height: 95px;
+    width: 95px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+.feedback > .comments > p{
+    position: absolute;
+    left: 125px;
+    width: 325px;
+    font-weight: bold;
+}
+.feedback > .comments > p:last-child{
+    top: 25px;
+    font-weight: normal;
+}
+.feedback > .fix {
+    margin-top: -110px;
+}
+.feedback > .fix_2 {
+    margin-top: 15px;
+}
+@media only screen and (max-width: 1050px){
+    .user_pic{
+        display: none;
+    }
+    .feedback > .comments{
+        margin-right: 500px;
+        margin-top: -355px;
+    }
+    .feedback > .fix{
+        margin-top: -230px;
+    }
+    .feedback > .fix_2{
+        margin-top: -105px;
+    }
+    .feedback > h2{
+        margin-top: -305px;
+        margin-right: 235px;
+    }
+}
+@media only screen and (max-width: 950px){
+    .user_pic{
+        display: none;
+    }
+    .feedback > .comments{
+        margin-right: 400px;
+        margin-top: -410px;
+    }
+    .feedback > .comments > p{
+        width: 200px;
+    }
+    .feedback > .comments > p:last-child{
+        margin-top: 15px;
+    }
+    .feedback > .fix{
+        margin-top: -270px;
+    }
+    .feedback > .fix_2{
+        margin-top: -125px;
+    }
+    .feedback > h2{
+        margin-top: -350px;
+        margin-right: 137px;
+    }
+}
+
+.footer{
+    height: 70px;
+    background: #69d2e7;
+    position: relative;
+}
+.footer > p {
+    font-size: 14px;
+    color: white;
+    float:left;
+    margin-left: 80px;
+    margin-top: 27px;
+}
+.footer > p:last-child{
+    float: right;
+    margin-left: 0;
+    margin-right: 80px;
+}

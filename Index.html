@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online clinic</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+   <div id="main">
+        <div class="header">
+            <div class="orange_line"></div>
+            <span class="logo"></span>
+            <span class="comp_name">
+                    <p>company name</p>
+                    <p>tag line goes here</p>
+            </span>
+            <nav id="navigation">
+                <div id="burger"></div>
+                <div id="burger"></div>
+                <div id="burger"></div>
+
+                <ul id="menu">
+                    <li><a href="#navigation" class="is_active">main</a></li>
+                    <li><a href="#description">about us</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#staff">staff</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#feedback">feedback</a></li>
+                </ul>
+            </nav>
+            
+            <h1>hello</h1>
+            <p class="subheading">we are online clinic</p>
+            
+        </div>
+        <div class="about_us">
+            <div class="description" id="description">
+                <p class="heading subheading">about us</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae saepe assumenda eligendi inventore eius molestiae quidem quaerat, quisquam dolorum quis! Atque nihil sint exercitationem minima, repudiandae cupiditate eos dolorum perferendis!</p>
+            </div>
+            <div class="shapes">
+                <div><img style="position: relative; top: 41px; left: 38px;" src="images/Shape1.png"></div>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div><img style="position: relative; top: 42px; left: 34px;" src="images/Shape2.png"></div>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div><img style="position: relative; top: 34px; left: 41px;" src="images/Shape3.png"></div>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="gallery" id="gallery">
+            <span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ullam deleniti repellat deserunt veritatis. Quam tempora neque.</p>
+            </span>
+            <div class="slider" id="slider">
+                <img src="images/img1.png" id="img">
+                <div id="left_holder"><img onClick="slide(-1)" src="images/leftHolder.png" class="left"></div>
+                <div id="right_holder"><img onClick="slide(1)" src="images/rightHolder.png" class="right"></div>
+            </div>
+        </div>
+        <div class="staff" id="staff">
+            <div id="bubblebox">
+                <div id="bubblecontent">
+                    <div>
+                        <img src="images/staffPic.png">
+                    </div>
+                    <h2>Alice G. Mullins</h2>
+                    <p class="job">General Physician</p>
+                    <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam error commodi in, ad dolores. Doloribus voluptatum odit nostrum assumenda, maiores. Ipsum doloremque iste excepturi eaque porro laborum ullam atque officiis.</p>
+                </div>
+                <div id="bubbles">
+                    <div onclick="bubbles(0); clearInterval(intrvl);" style="background:#69d2e7;"></div>
+                    <div onclick="bubbles(1); clearInterval(intrvl);"></div>
+                    <div onclick="bubbles(2); clearInterval(intrvl);"></div>
+                </div>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <p class="head sett">Lorem ipsum dolor sit amet.</p>
+            <p class="subhead sett">Lorem ipsum dolor sit.</p>
+            <p class="simple-block sett fix ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, voluptatibus, non.</p>
+            <p class="simple-block sett">Voluptatibus sit odio sequi quia dicta, asperiores excepturi minima maiores ex quos id explicabo aspernatur</p>
+            <p class="simple-block sett">Animi iure doloribus, cum repellat officiis a nam eveniet illo exercitationem, labore, quibusdam, veritatis dignissimos modi ratione provident eos adipisci.</p>
+            <div class="background-overlay"></div>
+        </div>
+        <div class="feedback" id="feedback">
+            <span class="logo"></span>
+            <span class="comp_name">
+                <p>company name</p>
+                <p>tag line goes here</p>
+            </span>
+            <span class="facebook social_sprite"></span>
+            <span class="youtube social_sprite"></span>
+            <span class="twitter social_sprite"></span>
+            <span class="google social_sprite"></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil perspiciatis est laudantium, alias similique facere dolore, repellendus veritatis temporibus quia consequatur nam perferendis. Suscipit ratione blanditiis sit exercitationem molestiae, aspernatur!</p>
+            <p>Consectetur iste corporis porro nemo esse quam voluptates, consequatur debitis repudiandae sunt quae, sapiente perferendis totam cumque quisquam sed labore. Voluptatibus id sunt non ipsam ex, quisquam ratione? Quidem, facilis.</p>
+            <h2>latest post</h2>
+            <div class="comments">
+                <div class="user_pic"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, et! Illo suscipit, ea illum repellat.</p>
+            </div>
+            <div class="comments fix">
+                <div class="user_pic"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, obcaecati qui vitae suscipit quaerat facere.</p>
+            </div>
+            <div class="comments fix_2">
+                <div class="user_pic"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, explicabo. Ipsa, soluta, exercitationem! Autem, eligendi!</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Terms of Use | Privecy & cookies</p>
+            <p>Copyright © 2016, All rights reserved.</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/menu.js" async></script>
+    <script type="text/javascript" src="script/gallery.js" async></script>
+    <script type="text/javascript" src="script/bubbles.js" async></script>
+</body>
+</html>
